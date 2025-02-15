@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Startups in Bihar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+        .login-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 300px;
+            width: 100%;
+        }
+        .login-box img {
+            height: 80px;
+            width: auto;
+            margin-bottom: 15px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        .btn {
+            background: #ff5e62;
+            padding: 12px;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            width:85.5%;
+            display: block;
+            margin-top: 15px;
+            margin-left: 20px;
+            border: none;
+            cursor: pointer;
+            margin-left: px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #FEC74F;
+        }
+        a{
+            text-decoration: none;
+        }
+        @media (max-width: 1024px) {
+    .login-box {
+        width: 80%;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .login-box {
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+    }
+    input, .btn {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 15px;
+        max-width: 90%;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    input {
+        font-size: 14px;
+        padding: 8px;
+        width: calc(100% - 20px);
+    }
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+        width: calc(100% - 20px);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <img src="/HTML CSS FINAL/Image/output-onlinepngtools (2).png" alt="Startup Bihar Logo">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <a href="/HTML CSS FINAL/index.html" target="_blank"><button class="btn">Login</button></a>
+    </div>
+</body>
+</html>
